@@ -5,15 +5,15 @@ import paciencia.*;
 
 public class Baralho extends Observable implements PegarCarta {
 
-	private Collection<ArrayList<Carta>> cartas;
+    private Collection<ArrayList<Carta>> cartas;
 
-	/**
-	 * 
-	 * @return 
-	 */
-	@Override
-	public Carta pegar() {
-		throw new UnsupportedOperationException();
-	}
+    /**
+     * 
+     * @return 
+     */
+    @Override
+    public Carta pegar() {
+        throw new UnsupportedOperationException();
+    }
 
 }

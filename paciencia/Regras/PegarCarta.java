@@ -4,10 +4,10 @@ import paciencia.*;
 
 public interface PegarCarta {
 
-	/**
-	 * 
-	 * @return 
-	 */
-	Carta pegar();
+    /**
+     * 
+     * @return 
+     */
+    Carta pegar();
 
 }

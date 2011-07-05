@@ -2,14 +2,14 @@ package gui;
 
 public class Regras extends JOptionPane {
 
-	private String regras;
+    private String regras;
 
-	/**
-	 * 
-	 * @return 
-	 */
-	public Regras() {
-		throw new UnsupportedOperationException();
-	}
+    /**
+     * 
+     * @return 
+     */
+    public Regras() {
+        throw new UnsupportedOperationException();
+    }
 
 }

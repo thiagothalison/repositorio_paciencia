@@ -7,17 +7,17 @@ import br.ufsc.inf.leobr.cliente.*;
  */
 public class MovimentoVencedor extends Movimento implements Jogada, Jogada {
 
-	private String vencedor;
+    private String vencedor;
 
-	/**
-	 * 
-	 * @param origem
-	 * @param destino
-	 * @param vencedor
-	 * @return 
-	 */
-	public MovimentoVencedor(int origem, int destino, String vencedor) {
-		throw new UnsupportedOperationException();
-	}
+    /**
+     * 
+     * @param origem
+     * @param destino
+     * @param vencedor
+     * @return 
+     */
+    public MovimentoVencedor(int origem, int destino, String vencedor) {
+        throw new UnsupportedOperationException();
+    }
 
 }
