@@ -1,5 +1,7 @@
 package gui;
 
+import java.awt.Graphics;
+import java.awt.datatransfer.Transferable;
 import javax.swing.*;
 import java.util.*;
 

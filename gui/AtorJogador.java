@@ -35,21 +35,456 @@ public class AtorJogador extends JFrame implements Observer {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPMesa = new javax.swing.JPanel();
+        guiBaralhoOponente = new gui.GUIBaralho();
+        guiBagacoOponente = new gui.GUIBagaco();
+        guiRestritoOponente = new gui.GUIRestrito();
+        guiSequencia1 = new gui.GUISequencia();
+        guiSequencia2 = new gui.GUISequencia();
+        guiSequencia3 = new gui.GUISequencia();
+        guiSequencia4 = new gui.GUISequencia();
+        guiPilha1 = new gui.GUIPilha();
+        guiPilha2 = new gui.GUIPilha();
+        guiPilha3 = new gui.GUIPilha();
+        guiPilha4 = new gui.GUIPilha();
+        guiPilha5 = new gui.GUIPilha();
+        guiPilha6 = new gui.GUIPilha();
+        guiPilha7 = new gui.GUIPilha();
+        guiPilha8 = new gui.GUIPilha();
+        guiSequencia5 = new gui.GUISequencia();
+        guiSequencia6 = new gui.GUISequencia();
+        guiSequencia7 = new gui.GUISequencia();
+        guiSequencia8 = new gui.GUISequencia();
+        guiRestrito = new gui.GUIRestrito();
+        guiBagaco = new gui.GUIBagaco();
+        guiBaralho = new gui.GUIBaralho();
+        jPChat = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTAChat = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        JTAEnviarMensagem = new javax.swing.JTextArea();
+        jBEnviar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPMesa.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        javax.swing.GroupLayout guiBaralhoOponenteLayout = new javax.swing.GroupLayout(guiBaralhoOponente);
+        guiBaralhoOponente.setLayout(guiBaralhoOponenteLayout);
+        guiBaralhoOponenteLayout.setHorizontalGroup(
+            guiBaralhoOponenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiBaralhoOponenteLayout.setVerticalGroup(
+            guiBaralhoOponenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiBagacoOponenteLayout = new javax.swing.GroupLayout(guiBagacoOponente);
+        guiBagacoOponente.setLayout(guiBagacoOponenteLayout);
+        guiBagacoOponenteLayout.setHorizontalGroup(
+            guiBagacoOponenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiBagacoOponenteLayout.setVerticalGroup(
+            guiBagacoOponenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiRestritoOponenteLayout = new javax.swing.GroupLayout(guiRestritoOponente);
+        guiRestritoOponente.setLayout(guiRestritoOponenteLayout);
+        guiRestritoOponenteLayout.setHorizontalGroup(
+            guiRestritoOponenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiRestritoOponenteLayout.setVerticalGroup(
+            guiRestritoOponenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia1Layout = new javax.swing.GroupLayout(guiSequencia1);
+        guiSequencia1.setLayout(guiSequencia1Layout);
+        guiSequencia1Layout.setHorizontalGroup(
+            guiSequencia1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia1Layout.setVerticalGroup(
+            guiSequencia1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia2Layout = new javax.swing.GroupLayout(guiSequencia2);
+        guiSequencia2.setLayout(guiSequencia2Layout);
+        guiSequencia2Layout.setHorizontalGroup(
+            guiSequencia2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia2Layout.setVerticalGroup(
+            guiSequencia2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia3Layout = new javax.swing.GroupLayout(guiSequencia3);
+        guiSequencia3.setLayout(guiSequencia3Layout);
+        guiSequencia3Layout.setHorizontalGroup(
+            guiSequencia3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia3Layout.setVerticalGroup(
+            guiSequencia3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia4Layout = new javax.swing.GroupLayout(guiSequencia4);
+        guiSequencia4.setLayout(guiSequencia4Layout);
+        guiSequencia4Layout.setHorizontalGroup(
+            guiSequencia4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia4Layout.setVerticalGroup(
+            guiSequencia4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha1Layout = new javax.swing.GroupLayout(guiPilha1);
+        guiPilha1.setLayout(guiPilha1Layout);
+        guiPilha1Layout.setHorizontalGroup(
+            guiPilha1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha1Layout.setVerticalGroup(
+            guiPilha1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha2Layout = new javax.swing.GroupLayout(guiPilha2);
+        guiPilha2.setLayout(guiPilha2Layout);
+        guiPilha2Layout.setHorizontalGroup(
+            guiPilha2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha2Layout.setVerticalGroup(
+            guiPilha2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha3Layout = new javax.swing.GroupLayout(guiPilha3);
+        guiPilha3.setLayout(guiPilha3Layout);
+        guiPilha3Layout.setHorizontalGroup(
+            guiPilha3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha3Layout.setVerticalGroup(
+            guiPilha3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha4Layout = new javax.swing.GroupLayout(guiPilha4);
+        guiPilha4.setLayout(guiPilha4Layout);
+        guiPilha4Layout.setHorizontalGroup(
+            guiPilha4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha4Layout.setVerticalGroup(
+            guiPilha4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha5Layout = new javax.swing.GroupLayout(guiPilha5);
+        guiPilha5.setLayout(guiPilha5Layout);
+        guiPilha5Layout.setHorizontalGroup(
+            guiPilha5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha5Layout.setVerticalGroup(
+            guiPilha5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha6Layout = new javax.swing.GroupLayout(guiPilha6);
+        guiPilha6.setLayout(guiPilha6Layout);
+        guiPilha6Layout.setHorizontalGroup(
+            guiPilha6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha6Layout.setVerticalGroup(
+            guiPilha6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha7Layout = new javax.swing.GroupLayout(guiPilha7);
+        guiPilha7.setLayout(guiPilha7Layout);
+        guiPilha7Layout.setHorizontalGroup(
+            guiPilha7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha7Layout.setVerticalGroup(
+            guiPilha7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiPilha8Layout = new javax.swing.GroupLayout(guiPilha8);
+        guiPilha8.setLayout(guiPilha8Layout);
+        guiPilha8Layout.setHorizontalGroup(
+            guiPilha8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiPilha8Layout.setVerticalGroup(
+            guiPilha8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia5Layout = new javax.swing.GroupLayout(guiSequencia5);
+        guiSequencia5.setLayout(guiSequencia5Layout);
+        guiSequencia5Layout.setHorizontalGroup(
+            guiSequencia5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia5Layout.setVerticalGroup(
+            guiSequencia5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia6Layout = new javax.swing.GroupLayout(guiSequencia6);
+        guiSequencia6.setLayout(guiSequencia6Layout);
+        guiSequencia6Layout.setHorizontalGroup(
+            guiSequencia6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia6Layout.setVerticalGroup(
+            guiSequencia6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia7Layout = new javax.swing.GroupLayout(guiSequencia7);
+        guiSequencia7.setLayout(guiSequencia7Layout);
+        guiSequencia7Layout.setHorizontalGroup(
+            guiSequencia7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia7Layout.setVerticalGroup(
+            guiSequencia7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiSequencia8Layout = new javax.swing.GroupLayout(guiSequencia8);
+        guiSequencia8.setLayout(guiSequencia8Layout);
+        guiSequencia8Layout.setHorizontalGroup(
+            guiSequencia8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 185, Short.MAX_VALUE)
+        );
+        guiSequencia8Layout.setVerticalGroup(
+            guiSequencia8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiRestritoLayout = new javax.swing.GroupLayout(guiRestrito);
+        guiRestrito.setLayout(guiRestritoLayout);
+        guiRestritoLayout.setHorizontalGroup(
+            guiRestritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiRestritoLayout.setVerticalGroup(
+            guiRestritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiBagacoLayout = new javax.swing.GroupLayout(guiBagaco);
+        guiBagaco.setLayout(guiBagacoLayout);
+        guiBagacoLayout.setHorizontalGroup(
+            guiBagacoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiBagacoLayout.setVerticalGroup(
+            guiBagacoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout guiBaralhoLayout = new javax.swing.GroupLayout(guiBaralho);
+        guiBaralho.setLayout(guiBaralhoLayout);
+        guiBaralhoLayout.setHorizontalGroup(
+            guiBaralhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        guiBaralhoLayout.setVerticalGroup(
+            guiBaralhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPMesaLayout = new javax.swing.GroupLayout(jPMesa);
+        jPMesa.setLayout(jPMesaLayout);
+        jPMesaLayout.setHorizontalGroup(
+            jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPMesaLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(guiSequencia3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(guiSequencia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(guiSequencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPMesaLayout.createSequentialGroup()
+                        .addComponent(guiBaralhoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(guiBagacoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(guiSequencia4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPMesaLayout.createSequentialGroup()
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(guiPilha1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiPilha2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiPilha3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiPilha4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(42, 42, 42)
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPMesaLayout.createSequentialGroup()
+                                .addComponent(guiPilha8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(guiSequencia8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPMesaLayout.createSequentialGroup()
+                                .addComponent(guiPilha5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(guiSequencia5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPMesaLayout.createSequentialGroup()
+                                .addComponent(guiPilha7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(guiSequencia7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPMesaLayout.createSequentialGroup()
+                                .addComponent(guiPilha6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(guiSequencia6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPMesaLayout.createSequentialGroup()
+                                .addComponent(guiRestrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(guiBagaco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(guiBaralho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(guiRestritoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
+        jPMesaLayout.setVerticalGroup(
+            jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPMesaLayout.createSequentialGroup()
+                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPMesaLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(guiSequencia5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPMesaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(guiPilha5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPMesaLayout.createSequentialGroup()
+                                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(guiBaralhoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(guiBagacoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(guiRestritoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(guiSequencia1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(guiPilha1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPMesaLayout.createSequentialGroup()
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(guiSequencia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiPilha2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(guiSequencia3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiPilha3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(guiSequencia4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiPilha4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPMesaLayout.createSequentialGroup()
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(guiPilha6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiSequencia6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(guiPilha7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiSequencia7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(guiSequencia8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guiPilha8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(guiRestrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(guiBagaco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(guiBaralho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
+        jPChat.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jTAChat.setColumns(20);
+        jTAChat.setEditable(false);
+        jTAChat.setRows(5);
+        jScrollPane1.setViewportView(jTAChat);
+
+        JTAEnviarMensagem.setColumns(20);
+        JTAEnviarMensagem.setRows(3);
+        jScrollPane2.setViewportView(JTAEnviarMensagem);
+
+        jBEnviar.setText("Enviar");
+        jBEnviar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBEnviarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPChatLayout = new javax.swing.GroupLayout(jPChat);
+        jPChat.setLayout(jPChatLayout);
+        jPChatLayout.setHorizontalGroup(
+            jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPChatLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jBEnviar, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addContainerGap())
+        );
+        jPChatLayout.setVerticalGroup(
+            jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPChatLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 431, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jBEnviar)
+                .addGap(11, 11, 11))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 638, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPChat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 473, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPChat, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPMesa, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEnviarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBEnviarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -63,6 +498,36 @@ public class AtorJogador extends JFrame implements Observer {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea JTAEnviarMensagem;
+    private gui.GUIBagaco guiBagaco;
+    private gui.GUIBagaco guiBagacoOponente;
+    private gui.GUIBaralho guiBaralho;
+    private gui.GUIBaralho guiBaralhoOponente;
+    private gui.GUIPilha guiPilha1;
+    private gui.GUIPilha guiPilha2;
+    private gui.GUIPilha guiPilha3;
+    private gui.GUIPilha guiPilha4;
+    private gui.GUIPilha guiPilha5;
+    private gui.GUIPilha guiPilha6;
+    private gui.GUIPilha guiPilha7;
+    private gui.GUIPilha guiPilha8;
+    private gui.GUIRestrito guiRestrito;
+    private gui.GUIRestrito guiRestritoOponente;
+    private gui.GUISequencia guiSequencia1;
+    private gui.GUISequencia guiSequencia2;
+    private gui.GUISequencia guiSequencia3;
+    private gui.GUISequencia guiSequencia4;
+    private gui.GUISequencia guiSequencia5;
+    private gui.GUISequencia guiSequencia6;
+    private gui.GUISequencia guiSequencia7;
+    private gui.GUISequencia guiSequencia8;
+    private javax.swing.JButton jBEnviar;
+    private javax.swing.JPanel jPChat;
+    private javax.swing.JPanel jPMesa;
+    private javax.swing.JPanel jPP5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTAChat;
     // End of variables declaration//GEN-END:variables
 
 
