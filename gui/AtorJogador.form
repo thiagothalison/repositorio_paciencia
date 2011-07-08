@@ -22,24 +22,24 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPMesa" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jPMesa" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jPChat" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="jPChat" alignment="0" min="0" pref="566" max="32767" attributes="1"/>
-                  <Component id="jPMesa" alignment="0" max="32767" attributes="1"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jPMesa" alignment="1" max="32767" attributes="1"/>
+                  <Component id="jPChat" alignment="1" min="-2" pref="566" max="-2" attributes="1"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -58,124 +58,116 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="guiSequencia3" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="guiSequencia2" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="guiSequencia1" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="guiBaralhoOponente" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="guiBagacoOponente" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="guiSequencia4" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="guiPilha1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiPilha2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiPilha3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiPilha4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="guiSequencia1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="guiSequencia2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="guiSequencia3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="guiSequencia4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="guiRestrito" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="guiPilha8" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="guiPilha1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="guiPilha2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="guiPilha3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="guiPilha4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                          <Component id="guiPilha5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="guiPilha6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                          <Component id="guiPilha7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="guiPilha8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="guiSequencia8" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="guiPilha5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="guiSequencia5" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="guiPilha7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="guiSequencia7" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="guiPilha6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="guiSequencia6" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="guiRestrito" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="guiBagaco" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
                                   <Component id="guiBaralho" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <Component id="guiRestritoOponente" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="145" max="32767" attributes="0"/>
+                          <Component id="guiBaralhoOponente" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiBagacoOponente" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace pref="27" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="guiSequencia5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="guiSequencia6" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="guiSequencia7" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="guiSequencia8" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiRestritoOponente" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiBagaco" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Group type="102" alignment="1" attributes="1">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="guiSequencia5" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="guiPilha5" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="guiBaralhoOponente" min="-2" max="-2" attributes="0"/>
-                                      <Component id="guiBagacoOponente" min="-2" max="-2" attributes="0"/>
-                                      <Component id="guiRestritoOponente" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="guiSequencia1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="guiPilha1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                      </Group>
-                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="guiSequencia2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiPilha2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="guiBagacoOponente" min="-2" max="-2" attributes="0"/>
+                      <Component id="guiBaralhoOponente" min="-2" max="-2" attributes="0"/>
+                      <Component id="guiRestritoOponente" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="guiSequencia5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="guiSequencia3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiPilha3" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="guiSequencia6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="guiSequencia4" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiPilha4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="guiSequencia7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiSequencia8" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="guiPilha6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiSequencia6" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="guiPilha5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="guiPilha7" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiSequencia7" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="guiPilha6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="guiSequencia8" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="guiPilha8" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="guiPilha7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiPilha8" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="guiSequencia1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiSequencia2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiSequencia3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiSequencia4" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="guiPilha1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiPilha2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiPilha3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="guiPilha4" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -250,7 +242,7 @@
             </DimensionLayout>
           </Layout>
         </Container>
-        <Container class="gui.GUISequencia" name="guiSequencia2">
+        <Container class="gui.GUISequencia" name="guiSequencia3">
 
           <Layout>
             <DimensionLayout dim="0">
@@ -265,7 +257,7 @@
             </DimensionLayout>
           </Layout>
         </Container>
-        <Container class="gui.GUISequencia" name="guiSequencia3">
+        <Container class="gui.GUISequencia" name="guiSequencia2">
 
           <Layout>
             <DimensionLayout dim="0">
@@ -430,7 +422,7 @@
             </DimensionLayout>
           </Layout>
         </Container>
-        <Container class="gui.GUISequencia" name="guiSequencia6">
+        <Container class="gui.GUISequencia" name="guiSequencia8">
 
           <Layout>
             <DimensionLayout dim="0">
@@ -460,7 +452,7 @@
             </DimensionLayout>
           </Layout>
         </Container>
-        <Container class="gui.GUISequencia" name="guiSequencia8">
+        <Container class="gui.GUISequencia" name="guiSequencia6">
 
           <Layout>
             <DimensionLayout dim="0">
@@ -475,7 +467,7 @@
             </DimensionLayout>
           </Layout>
         </Container>
-        <Container class="gui.GUIRestrito" name="guiRestrito">
+        <Container class="gui.GUIBaralho" name="guiBaralho">
 
           <Layout>
             <DimensionLayout dim="0">
@@ -505,7 +497,7 @@
             </DimensionLayout>
           </Layout>
         </Container>
-        <Container class="gui.GUIBaralho" name="guiBaralho">
+        <Container class="gui.GUIRestrito" name="guiRestrito">
 
           <Layout>
             <DimensionLayout dim="0">

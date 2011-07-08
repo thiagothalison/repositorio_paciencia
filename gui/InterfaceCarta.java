@@ -30,8 +30,9 @@ public abstract class InterfaceCarta extends JPanel implements Observer, Transfe
      * @param graphics
      * @return 
      */
-    public void paint(Graphics graphics) {
-        throw new UnsupportedOperationException();
-    }
+//    @Override
+//    public void paint(Graphics graphics) {
+//        throw new UnsupportedOperationException();
+//    }
 
 }

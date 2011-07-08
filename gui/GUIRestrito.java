@@ -10,14 +10,16 @@
  */
 package gui;
 
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
 import java.io.Serializable;
-import javax.swing.JPanel;
 
 /**
  *
  * @author Matheus
  */
-public class GUIRestrito extends JPanel implements Serializable{
+public class GUIRestrito extends InterfaceCarta implements Serializable{
 
     /** Creates new form GUIRestrito */
     public GUIRestrito() {
@@ -41,4 +43,16 @@ public class GUIRestrito extends JPanel implements Serializable{
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
+
+    public DataFlavor[] getTransferDataFlavors() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public boolean isDataFlavorSupported(DataFlavor flavor) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException, IOException {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
