@@ -36,7 +36,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="jPChat" alignment="0" max="32767" attributes="1"/>
+                  <Component id="jPChat" alignment="0" min="0" pref="566" max="32767" attributes="1"/>
                   <Component id="jPMesa" alignment="0" max="32767" attributes="1"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -184,7 +184,7 @@
                       <Component id="guiBagaco" min="-2" max="-2" attributes="0"/>
                       <Component id="guiBaralho" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -556,7 +556,7 @@
                   <Component id="jScrollPane2" min="-2" pref="79" max="-2" attributes="1"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jBEnviar" min="-2" max="-2" attributes="1"/>
-                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
