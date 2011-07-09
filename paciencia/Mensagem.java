@@ -2,7 +2,7 @@ package paciencia;
 
 import br.ufsc.inf.leobr.cliente.*;
 
-public class Mensagem implements Jogada, Jogada {
+public class Mensagem implements Jogada {
 
     public String mensagem;
 

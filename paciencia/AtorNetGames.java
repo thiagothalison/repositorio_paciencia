@@ -1,5 +1,8 @@
 package paciencia;
 
+import br.ufsc.inf.leobr.cliente.Jogada;
+import br.ufsc.inf.leobr.cliente.OuvidorProxy;
+
 public class AtorNetGames implements OuvidorProxy {
 
     /**
@@ -57,7 +60,7 @@ public class AtorNetGames implements OuvidorProxy {
     }
 
     /**
-     * MÈtodo utilizado para requisitar o inicio de uma partida (em caso de erro o mÈtodo `tratarPartidaNaoIniciada` È chamado)
+     * M√©todo utilizado para requisitar o inicio de uma partida (em caso de erro o m√©todo `tratarPartidaNaoIniciada` √© chamado)
      * @param quantidadeJogadores
      * @return 
      */
@@ -66,7 +69,7 @@ public class AtorNetGames implements OuvidorProxy {
     }
 
     /**
-     * Utilizado quando iniciarPartida() foi chamado e n„o h· jogadores o suficiente para comeÁar o jogo.
+     * Utilizado quando iniciarPartida() foi chamado e n√£o h√° jogadores o suficiente para come√ßar o jogo.
      * @param message
      * @return 
      */
@@ -101,7 +104,7 @@ public class AtorNetGames implements OuvidorProxy {
     }
 
     /**
-     * MÈtodo chamado para iniciar uma partida (a primeira ou n„o)
+     * M√©todo chamado para iniciar uma partida (a primeira ou n√£o)
      * @param posicao
      * @return 
      */

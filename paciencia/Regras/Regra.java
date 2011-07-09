@@ -1,5 +1,6 @@
 package paciencia.Regras;
 
+import br.ufsc.inf.leobr.cliente.Jogada;
 import java.util.*;
 import paciencia.*;
 

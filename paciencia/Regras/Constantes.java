@@ -1,6 +1,6 @@
 package paciencia.Regras;
 
-public class Contantes {
+public class Constantes {
 
     public final int Restrito = 0;
     public final int Pilha = 4;

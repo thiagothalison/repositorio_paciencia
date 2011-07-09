@@ -1,5 +1,7 @@
 package gui;
 
+import javax.swing.JOptionPane;
+
 public class Regras extends JOptionPane {
 
     private String regras;
