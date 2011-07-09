@@ -54,4 +54,25 @@ public class GUISequencia extends InterfaceCarta implements Serializable{
     public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException, IOException {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+    
+    protected boolean paraEsquerda;
+
+    /**
+     * Get the value of paraEsquerda
+     *
+     * @return the value of paraEsquerda
+     */
+    public boolean isParaEsquerda() {
+        return paraEsquerda;
+    }
+
+    /**
+     * Set the value of paraEsquerda
+     *
+     * @param paraEsquerda new value of paraEsquerda
+     */
+    public void setParaEsquerda(boolean paraEsquerda) {
+        this.paraEsquerda = paraEsquerda;
+    }
+
 }

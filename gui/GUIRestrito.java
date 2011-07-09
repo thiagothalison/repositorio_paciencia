@@ -12,6 +12,7 @@ package gui;
 
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.Serializable;
 
@@ -55,4 +56,25 @@ public class GUIRestrito extends InterfaceCarta implements Serializable{
     public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException, IOException {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+    
+    protected BufferedImage carta;
+
+    /**
+     * Get the value of carta
+     *
+     * @return the value of carta
+     */
+    public BufferedImage getCarta() {
+        return carta;
+    }
+
+    /**
+     * Set the value of carta
+     *
+     * @param carta new value of carta
+     */
+    public void setCarta(BufferedImage carta) {
+        this.carta = carta;
+    }
+
 }
