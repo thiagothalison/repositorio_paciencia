@@ -66,7 +66,7 @@ public class GUIBagaco
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         
-        if( this.cartas.size() > 0 ){
+        if( this.cartas != null && this.cartas.size() > 0 ){
             Carta carta = this.cartas.get(0);
             g.drawImage(this.getImage(carta).getImage(),0,0,null);
         }

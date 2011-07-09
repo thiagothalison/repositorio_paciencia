@@ -86,7 +86,7 @@ public class GUISequencia
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         
-        if( this.cartas.size() > 0 ){
+        if( this.cartas != null && this.cartas.size() > 0 ){
             if(this.isParaEsquerda()){
                 this.paintComponentRigthToLeft(g);
             }else{

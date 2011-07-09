@@ -83,6 +83,7 @@ public class AtorJogador extends JFrame implements Observer {
         jLChat = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPMesa.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPMesa.setOpaque(false);
