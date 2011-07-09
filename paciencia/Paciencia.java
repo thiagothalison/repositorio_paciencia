@@ -2,6 +2,9 @@ package paciencia;
 
 import paciencia.Regras.*;
 import br.ufsc.inf.leobr.cliente.*;
+import br.ufsc.inf.leobr.cliente.exception.ArquivoMultiplayerException;
+import br.ufsc.inf.leobr.cliente.exception.JahConectadoException;
+import br.ufsc.inf.leobr.cliente.exception.NaoPossivelConectarException;
 import gui.*;
 
 public class Paciencia {
@@ -9,6 +12,8 @@ public class Paciencia {
     protected Regra regra;
     protected int posicao;
     private String nick;
+    private AtorNetGames netGames;
+    private AtorJogador atorJogador;
 
     /**
      * 
@@ -89,7 +94,17 @@ public class Paciencia {
      * @return 
      */
     public void conectar(String ipServidor, String nick) {
-        throw new UnsupportedOperationException();
+        try{
+            netGames.conectar(ipServidor, nick);
+            netGames.iniciarPartida(2);
+            setNick(nick);
+        }catch(NaoPossivelConectarException e){
+            atorJogador.popupMensagem("Não foi passivel realizar a conecção!");
+        }catch(JahConectadoException e2){
+            atorJogador.popupMensagem("Usuário ja esta conectado!");
+        }catch(ArquivoMultiplayerException e3){
+            atorJogador.popupMensagem("Arquivo de configuração inválido!");
+        }
     }
 
     /**
@@ -185,7 +200,7 @@ public class Paciencia {
      * @return 
      */
     public void setNick(String nick) {
-        throw new UnsupportedOperationException();
+        this.nick = nick;
     }
 
 }

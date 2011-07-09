@@ -2,17 +2,22 @@ package paciencia;
 
 import br.ufsc.inf.leobr.cliente.Jogada;
 import br.ufsc.inf.leobr.cliente.OuvidorProxy;
+import br.ufsc.inf.leobr.cliente.Proxy;
+import br.ufsc.inf.leobr.cliente.exception.ArquivoMultiplayerException;
+import br.ufsc.inf.leobr.cliente.exception.JahConectadoException;
+import br.ufsc.inf.leobr.cliente.exception.NaoPossivelConectarException;
 
 public class AtorNetGames implements OuvidorProxy {
-
+    
+    private Proxy proxy;
     /**
      * 
      * @param ipServidor
      * @param nome
      * @return 
      */
-    public void conectar(String ipServidor, String nome) {
-        throw new UnsupportedOperationException();
+    public void conectar(String ipServidor, String nome) throws NaoPossivelConectarException, JahConectadoException, ArquivoMultiplayerException{
+        proxy.conectar(ipServidor, nome);
     }
 
     /**
