@@ -27,6 +27,7 @@ public class ImageLoader
          chaves  = new Vector();
          //chaves.addElement("language");
          tabela = new Hashtable();
+         tabela.put("offset", 11);
     }
 
     @Override

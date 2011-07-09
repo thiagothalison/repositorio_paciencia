@@ -10,17 +10,22 @@
  */
 package gui;
 
+import java.awt.Graphics;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Observable;
+import paciencia.Carta;
 
 /**
  *
  * @author Matheus
  */
-public class GUIRestrito extends InterfaceCarta implements Serializable{
+public class GUIRestrito
+    extends InterfaceCarta
+    implements Serializable{
 
     /** Creates new form GUIRestrito */
     public GUIRestrito() {
@@ -58,24 +63,12 @@ public class GUIRestrito extends InterfaceCarta implements Serializable{
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
-    protected BufferedImage carta;
-
-    /**
-     * Get the value of carta
-     *
-     * @return the value of carta
-     */
-    public BufferedImage getCarta() {
-        return carta;
+    @Override
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        
+        if( this.cartas.size() > 0 ){
+            g.drawImage(this.getImage("verso").getImage(),0,0,null);
+        }
     }
-
-    /**
-     * Set the value of carta
-     *
-     * @param carta new value of carta
-     */
-    public void setCarta(BufferedImage carta) {
-        this.carta = carta;
-    }
-
 }

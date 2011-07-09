@@ -10,16 +10,22 @@
  */
 package gui;
 
+import java.awt.Graphics;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Observable;
+import paciencia.Carta;
 
 /**
  *
  * @author Matheus
  */
-public class GUIPilha extends InterfaceCarta implements Serializable{
+public class GUIPilha
+    extends InterfaceCarta
+    implements Serializable{
 
     /** Creates new form GUIPilha */
     public GUIPilha() {
@@ -55,4 +61,15 @@ public class GUIPilha extends InterfaceCarta implements Serializable{
     public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException, IOException {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+    
+    @Override
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        
+        if( this.cartas.size() > 0 ){
+            Carta carta = this.cartas.get(0);
+            g.drawImage(this.getImage(carta).getImage(),0,0,null);
+        }
+    }
+    
 }
