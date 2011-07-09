@@ -34,8 +34,9 @@ public class AtorJogador extends JFrame implements Observer {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
-        jPMesa = new javax.swing.JPanel();
+        jPMesa = new javax.swing.JPanel(new ImageIcon("../imagens/fundo.png"));
         guiBaralhoOponente = new gui.GUIBaralho();
         guiBagacoOponente = new gui.GUIBagaco();
         guiRestritoOponente = new gui.GUIRestrito();
@@ -58,27 +59,32 @@ public class AtorJogador extends JFrame implements Observer {
         guiBaralho = new gui.GUIBaralho();
         guiBagaco = new gui.GUIBagaco();
         guiRestrito = new gui.GUIRestrito();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        jLBaralhoOponente = new javax.swing.JLabel();
+        jLBagacoOponente = new javax.swing.JLabel();
+        jLRestritoOponente = new javax.swing.JLabel();
+        jLSequencias1 = new javax.swing.JLabel();
+        jLSequencias2 = new javax.swing.JLabel();
+        jLPilhas1 = new javax.swing.JLabel();
+        jLPilhas2 = new javax.swing.JLabel();
+        jLBaralho = new javax.swing.JLabel();
+        jLBagaco = new javax.swing.JLabel();
+        jLRestrito = new javax.swing.JLabel();
         jPChat = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTAChat = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         JTAEnviarMensagem = new javax.swing.JTextArea();
         jBEnviar = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
+        jLChat = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPMesa.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jPMesa, org.jdesktop.beansbinding.ObjectProperty.create(), jPMesa, org.jdesktop.beansbinding.BeanProperty.create("background"));
+        bindingGroup.addBinding(binding);
+
+        jPmesa.add();
 
         javax.swing.GroupLayout guiBaralhoOponenteLayout = new javax.swing.GroupLayout(guiBaralhoOponente);
         guiBaralhoOponente.setLayout(guiBaralhoOponenteLayout);
@@ -322,25 +328,25 @@ public class AtorJogador extends JFrame implements Observer {
             .addGap(0, 77, Short.MAX_VALUE)
         );
 
-        jLabel1.setText("Baralho");
+        jLBaralhoOponente.setText("Baralho");
 
-        jLabel2.setText("Bagaço");
+        jLBagacoOponente.setText("Bagaço");
 
-        jLabel3.setText("Restrito");
+        jLRestritoOponente.setText("Restrito");
 
-        jLabel4.setText("Sequências");
+        jLSequencias1.setText("Sequências");
 
-        jLabel5.setText("Sequências");
+        jLSequencias2.setText("Sequências");
 
-        jLabel6.setText("Pilhas");
+        jLPilhas1.setText("Pilhas");
 
-        jLabel7.setText("Pilhas");
+        jLPilhas2.setText("Pilhas");
 
-        jLabel8.setText("Baralho");
+        jLBaralho.setText("Baralho");
 
-        jLabel9.setText("Bagaço");
+        jLBagaco.setText("Bagaço");
 
-        jLabel10.setText("Restrito");
+        jLRestrito.setText("Restrito");
 
         javax.swing.GroupLayout jPMesaLayout = new javax.swing.GroupLayout(jPMesa);
         jPMesa.setLayout(jPMesaLayout);
@@ -348,9 +354,6 @@ public class AtorJogador extends JFrame implements Observer {
             jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPMesaLayout.createSequentialGroup()
                 .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPMesaLayout.createSequentialGroup()
-                        .addGap(355, 355, 355)
-                        .addComponent(guiRestritoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPMesaLayout.createSequentialGroup()
                         .addGap(142, 142, 142)
                         .addComponent(guiRestrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -382,9 +385,9 @@ public class AtorJogador extends JFrame implements Observer {
                                         .addComponent(guiPilha7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(guiPilha8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPMesaLayout.createSequentialGroup()
-                                .addComponent(jLabel10)
+                                .addComponent(jLRestrito)
                                 .addGap(114, 114, 114)
-                                .addComponent(jLabel9)))
+                                .addComponent(jLBagaco)))
                         .addGap(18, 18, 18)
                         .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(guiSequencia5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -393,31 +396,39 @@ public class AtorJogador extends JFrame implements Observer {
                             .addComponent(guiSequencia8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPMesaLayout.createSequentialGroup()
                                 .addGap(10, 10, 10)
-                                .addComponent(jLabel8))))
+                                .addComponent(jLBaralho))))
                     .addGroup(jPMesaLayout.createSequentialGroup()
                         .addGap(154, 154, 154)
-                        .addComponent(jLabel1)
+                        .addComponent(jLBaralhoOponente)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel2)
+                        .addComponent(jLBagacoOponente)
                         .addGap(122, 122, 122)
-                        .addComponent(jLabel3))
+                        .addComponent(jLRestritoOponente)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPMesaLayout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addComponent(jLSequencias1)
+                .addContainerGap(418, Short.MAX_VALUE))
+            .addGroup(jPMesaLayout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPMesaLayout.createSequentialGroup()
-                        .addGap(140, 140, 140)
+                        .addGap(57, 57, 57)
                         .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6)
+                            .addComponent(jLPilhas1)
                             .addGroup(jPMesaLayout.createSequentialGroup()
                                 .addComponent(guiBaralhoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(guiBagacoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(34, 34, 34)
-                        .addComponent(jLabel7)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPMesaLayout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 281, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(83, 83, 83))
+                        .addComponent(jLPilhas2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                        .addComponent(jLSequencias2)
+                        .addGap(72, 72, 72))
+                    .addGroup(jPMesaLayout.createSequentialGroup()
+                        .addGap(272, 272, 272)
+                        .addComponent(guiRestritoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(142, Short.MAX_VALUE))))
         );
         jPMesaLayout.setVerticalGroup(
             jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -427,9 +438,9 @@ public class AtorJogador extends JFrame implements Observer {
                     .addGroup(jPMesaLayout.createSequentialGroup()
                         .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel1)
-                                .addComponent(jLabel2))
-                            .addComponent(jLabel3))
+                                .addComponent(jLBaralhoOponente)
+                                .addComponent(jLBagacoOponente))
+                            .addComponent(jLRestritoOponente))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(guiBagacoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -437,10 +448,11 @@ public class AtorJogador extends JFrame implements Observer {
                             .addComponent(guiRestritoOponente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(7, 7, 7)
                         .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)))
-                    .addComponent(jLabel7))
+                            .addComponent(jLSequencias1)
+                            .addComponent(jLPilhas1)))
+                    .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLPilhas2)
+                        .addComponent(jLSequencias2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -478,9 +490,9 @@ public class AtorJogador extends JFrame implements Observer {
                         .addComponent(guiSequencia8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(9, 9, 9)
                 .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10))
+                    .addComponent(jLBaralho)
+                    .addComponent(jLBagaco)
+                    .addComponent(jLRestrito))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(guiRestrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -507,7 +519,7 @@ public class AtorJogador extends JFrame implements Observer {
             }
         });
 
-        jLabel11.setText("Chat");
+        jLChat.setText("Chat");
 
         javax.swing.GroupLayout jPChatLayout = new javax.swing.GroupLayout(jPChat);
         jPChat.setLayout(jPChatLayout);
@@ -526,13 +538,13 @@ public class AtorJogador extends JFrame implements Observer {
                                 .addComponent(jBEnviar))))
                     .addGroup(jPChatLayout.createSequentialGroup()
                         .addGap(102, 102, 102)
-                        .addComponent(jLabel11)))
+                        .addComponent(jLChat)))
                 .addContainerGap())
         );
         jPChatLayout.setVerticalGroup(
             jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPChatLayout.createSequentialGroup()
-                .addComponent(jLabel11)
+                .addComponent(jLChat)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -547,8 +559,8 @@ public class AtorJogador extends JFrame implements Observer {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPMesa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPChat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -557,11 +569,13 @@ public class AtorJogador extends JFrame implements Observer {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPChat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPMesa, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
+
+        bindingGroup.bind();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -606,29 +620,30 @@ public class AtorJogador extends JFrame implements Observer {
     private gui.GUISequencia guiSequencia7;
     private gui.GUISequencia guiSequencia8;
     private javax.swing.JButton jBEnviar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLBagaco;
+    private javax.swing.JLabel jLBagacoOponente;
+    private javax.swing.JLabel jLBaralho;
+    private javax.swing.JLabel jLBaralhoOponente;
+    private javax.swing.JLabel jLChat;
+    private javax.swing.JLabel jLPilhas1;
+    private javax.swing.JLabel jLPilhas2;
+    private javax.swing.JLabel jLRestrito;
+    private javax.swing.JLabel jLRestritoOponente;
+    private javax.swing.JLabel jLSequencias1;
+    private javax.swing.JLabel jLSequencias2;
     private javax.swing.JPanel jPChat;
     private javax.swing.JPanel jPMesa;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTAChat;
+    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 
 
     protected Paciencia mesa;
     protected String nomeJogador;
     protected String nomeOponente;
-
+    
     /**
      * 
      * @return 
