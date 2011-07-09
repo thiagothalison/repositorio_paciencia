@@ -5,7 +5,7 @@ import paciencia.*;
 
 public class Baralho extends Observable implements PegarCarta {
 
-    private Collection<ArrayList<Carta>> cartas;
+    private ArrayList<Carta> cartas;
 
     /**
      * 
@@ -14,6 +14,8 @@ public class Baralho extends Observable implements PegarCarta {
     @Override
     public Carta pegar() {
         throw new UnsupportedOperationException();
+        this.setChanged();
+        this.notifyObservers(cartas);
     }
 
 }

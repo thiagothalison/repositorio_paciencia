@@ -3,9 +3,11 @@ package paciencia.Regras;
 import java.util.*;
 import paciencia.*;
 
-public class Bagaco extends Observable implements ColocarCarta {
+public class Bagaco
+    extends Observable
+    implements ColocarCarta {
 
-    private Collection<ArrayList<Carta>> cartas;
+    private ArrayList<Carta> cartas;
 
     /**
      * 
@@ -15,6 +17,8 @@ public class Bagaco extends Observable implements ColocarCarta {
     @Override
     public void colocar(Carta carta) {
         throw new UnsupportedOperationException();
+        this.setChanged();
+        this.notifyObservers(cartas);
     }
 
     /**
@@ -25,6 +29,8 @@ public class Bagaco extends Observable implements ColocarCarta {
     @Override
     public void colocar(PegarCarta pegar) {
         throw new UnsupportedOperationException();
+        this.setChanged();
+        this.notifyObservers(cartas);
     }
 
 }

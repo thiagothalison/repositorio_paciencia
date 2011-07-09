@@ -10,16 +10,22 @@
  */
 package gui;
 
+import java.awt.Graphics;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Observable;
+import paciencia.Carta;
 
 /**
  *
  * @author Matheus
  */
-public class GUISequencia extends InterfaceCarta implements Serializable{
+public class GUISequencia
+    extends InterfaceCarta
+    implements Serializable{
 
     /** Creates new form GUISequencia */
     public GUISequencia() {
@@ -74,5 +80,37 @@ public class GUISequencia extends InterfaceCarta implements Serializable{
     public void setParaEsquerda(boolean paraEsquerda) {
         this.paraEsquerda = paraEsquerda;
     }
-
+    
+    @Override
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        
+        if( this.cartas.size() > 0 ){
+            if(this.isParaEsquerda()){
+                this.paintComponentRigthToLeft(g);
+            }else{
+                this.paintComponentLeftToRigth(g);
+            }
+        }
+    }
+    
+    private void paintComponentLeftToRigth(Graphics g){
+        Integer posx = 0;
+        Integer offset = (Integer)this.getImageBundle().getObject("offset");
+        
+        for( Carta carta : this.cartas){
+            g.drawImage(this.getImage(carta).getImage(),posx,0,null);
+            posx += offset;
+        }
+    }
+    
+    private void paintComponentRigthToLeft(Graphics g){
+        Integer posx    = this.getWidth() - this.getImage(this.cartas.get(0)).getImage().getWidth(null);
+        Integer offset  = (Integer)this.getImageBundle().getObject("offset");
+        
+        for( Carta carta : this.cartas){
+            g.drawImage(this.getImage(carta).getImage(),posx,0,null);
+            posx -= offset;
+        }
+    }
 }
