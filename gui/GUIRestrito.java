@@ -40,6 +40,7 @@ public class GUIRestrito extends InterfaceCarta implements Serializable{
         setFocusable(false);
         setMaximumSize(new java.awt.Dimension(57, 81));
         setMinimumSize(new java.awt.Dimension(57, 81));
+        setOpaque(false);
         setPreferredSize(new java.awt.Dimension(57, 81));
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -38,6 +38,7 @@ public class GUISequencia extends InterfaceCarta implements Serializable{
         setBorder(javax.swing.BorderFactory.createEtchedBorder());
         setMaximumSize(new java.awt.Dimension(189, 81));
         setMinimumSize(new java.awt.Dimension(189, 81));
+        setOpaque(false);
         setPreferredSize(new java.awt.Dimension(189, 81));
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables

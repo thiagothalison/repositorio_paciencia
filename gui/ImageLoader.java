@@ -19,7 +19,8 @@ public class ImageLoader
    extends ResourceBundle {
 
     private static final Vector chaves;
-    private static final String sufixo = ".png";
+    private static final String sufixo  = ".png";
+    private static final String dir     = "imagens/";
     private static Hashtable tabela;
     
     static {
@@ -47,7 +48,7 @@ public class ImageLoader
         // carrega
         if (icon == null) {
             URL url;
-            url = ImageLoader.class.getResource("images/" + imageName);
+            url = ImageLoader.class.getResource(dir + imageName);
 
             if (url != null) {
                 icon = new ImageIcon(url);

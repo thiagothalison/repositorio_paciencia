@@ -39,6 +39,7 @@ public class GUIBaralho extends InterfaceCarta implements Serializable{
         setFocusTraversalPolicyProvider(true);
         setMaximumSize(new java.awt.Dimension(57, 81));
         setMinimumSize(new java.awt.Dimension(57, 81));
+        setOpaque(false);
         setPreferredSize(new java.awt.Dimension(57, 81));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
     }// </editor-fold>//GEN-END:initComponents

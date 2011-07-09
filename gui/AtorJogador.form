@@ -52,13 +52,10 @@
             <EtchetBorder/>
           </Border>
         </Property>
+        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
-      <BindingProperties>
-        <BindingProperty name="background" source="jPMesa" target="jPMesa" targetPath="background" updateStrategy="0" immediately="false"/>
-      </BindingProperties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(new ImageIcon(&quot;../imagens/fundo.png&quot;))"/>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jPmesa.add();"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    public void paint(Graphics g){&#xa;        g.drawImage(((ImageIcon)ResourceBundle.getBundle(&quot;gui.ImageLoader&quot;).getObject(&quot;fundo&quot;)).getImage(), 0, 0, null);&#xa;        super.paint(g);&#xa;    }&#xa;}"/>
       </AuxValues>
 
       <Layout>
@@ -650,17 +647,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="1" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" min="-2" pref="216" max="-2" attributes="1"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jScrollPane2" alignment="0" pref="216" max="32767" attributes="1"/>
-                                  <Component id="jBEnviar" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jScrollPane1" alignment="1" min="-2" pref="216" max="-2" attributes="1"/>
+                              <Component id="jScrollPane2" alignment="0" pref="216" max="32767" attributes="1"/>
+                              <Component id="jBEnviar" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">

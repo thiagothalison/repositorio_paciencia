@@ -10,6 +10,7 @@
  */
 package gui;
 
+import java.awt.Graphics;
 import javax.swing.*;
 import java.util.*;
 import paciencia.*;
@@ -23,7 +24,7 @@ public class AtorJogador extends JFrame implements Observer {
 
     /** Creates new form AtorJogador */
     public AtorJogador() {
-        initComponents();
+        initComponents();   
     }
 
     /** This method is called from within the constructor to
@@ -34,9 +35,13 @@ public class AtorJogador extends JFrame implements Observer {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
-        jPMesa = new javax.swing.JPanel(new ImageIcon("../imagens/fundo.png"));
+        jPMesa = new javax.swing.JPanel(){
+            public void paint(Graphics g){
+                g.drawImage(((ImageIcon)ResourceBundle.getBundle("gui.ImageLoader").getObject("fundo")).getImage(), 0, 0, null);
+                super.paint(g);
+            }
+        };
         guiBaralhoOponente = new gui.GUIBaralho();
         guiBagacoOponente = new gui.GUIBagaco();
         guiRestritoOponente = new gui.GUIRestrito();
@@ -80,11 +85,7 @@ public class AtorJogador extends JFrame implements Observer {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPMesa.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jPMesa, org.jdesktop.beansbinding.ObjectProperty.create(), jPMesa, org.jdesktop.beansbinding.BeanProperty.create("background"));
-        bindingGroup.addBinding(binding);
-
-        jPmesa.add();
+        jPMesa.setOpaque(false);
 
         javax.swing.GroupLayout guiBaralhoOponenteLayout = new javax.swing.GroupLayout(guiBaralhoOponente);
         guiBaralhoOponente.setLayout(guiBaralhoOponenteLayout);
@@ -527,15 +528,12 @@ public class AtorJogador extends JFrame implements Observer {
             jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPChatLayout.createSequentialGroup()
                 .addGroup(jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPChatLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPChatLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addGroup(jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
-                                .addComponent(jBEnviar))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPChatLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPChatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                            .addComponent(jBEnviar)))
                     .addGroup(jPChatLayout.createSequentialGroup()
                         .addGap(102, 102, 102)
                         .addComponent(jLChat)))
@@ -574,8 +572,6 @@ public class AtorJogador extends JFrame implements Observer {
                     .addComponent(jPMesa, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
-
-        bindingGroup.bind();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -636,13 +632,13 @@ public class AtorJogador extends JFrame implements Observer {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTAChat;
-    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 
 
     protected Paciencia mesa;
     protected String nomeJogador;
     protected String nomeOponente;
+    ResourceBundle loader = ResourceBundle.getBundle("gui.ImageLoader");
     
     /**
      * 
@@ -746,13 +742,4 @@ public class AtorJogador extends JFrame implements Observer {
     public void chatMensagem(String mensagem) {
         throw new UnsupportedOperationException();
     }
-
-    /**
-     * 
-     * @param o
-     * @param arg
-     * @return 
-     */
-    
-
 }
