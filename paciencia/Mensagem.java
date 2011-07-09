@@ -11,7 +11,7 @@ public class Mensagem implements Jogada {
      * @return 
      */
     public String getMensagem() {
-        throw new UnsupportedOperationException();
+        return this.mensagem;
     }
 
     /**
@@ -20,7 +20,7 @@ public class Mensagem implements Jogada {
      * @return 
      */
     public void setMensagem(String mensagem) {
-        throw new UnsupportedOperationException();
+        this.mensagem = mensagem;
     }
 
     /**
@@ -29,7 +29,7 @@ public class Mensagem implements Jogada {
      * @return 
      */
     public Mensagem(String mensagem) {
-        throw new UnsupportedOperationException();
+        this.mensagem = mensagem;
     }
 
 }

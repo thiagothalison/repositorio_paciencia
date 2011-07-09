@@ -14,7 +14,26 @@ public class Movimento implements Jogada {
      * @return 
      */
     public Movimento(int origem, int destino) {
-        throw new UnsupportedOperationException();
+        this.origem = origem;
+        this.destino = destino;
     }
+
+    public int getDestino() {
+        return destino;
+    }
+
+    public void setDestino(int destino) {
+        this.destino = destino;
+    }
+
+    public int getOrigem() {
+        return origem;
+    }
+
+    public void setOrigem(int origem) {
+        this.origem = origem;
+    }
+    
+    
 
 }

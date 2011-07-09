@@ -12,7 +12,7 @@ public class Regra extends Observable {
     protected Collection<Restrito> restritos;
     protected Collection<Sequencia> sequencias;
     protected Collection<Sequencia> baralhos;
-
+    
     /**
      * 
      * @param movimento
@@ -37,7 +37,8 @@ public class Regra extends Observable {
      * @return 
      */
     public Jogada jogada(int origem, int destino) {
-        throw new UnsupportedOperationException();
+        Movimento movimento = new Movimento(origem,destino);
+        return jogada(movimento);
     }
 
     /**
@@ -46,7 +47,16 @@ public class Regra extends Observable {
      * @return 
      */
     public Jogada jogada(Movimento movimento) {
-        throw new UnsupportedOperationException();
+        Jogada retorno = null;
+        movimento(movimento);
+        decidirVirarBagaco();
+        decidirVez();
+        int venceu = verificarVencedor();
+        if(venceu==0){
+            
+        }
+        
+        return null;
     }
 
     /**

@@ -17,11 +17,15 @@ public class Paciencia {
 
     /**
      * 
-     * @param estadoIncial
+     * @param estadoInicial
      * @return 
      */
-    public void criarMesa(EstadoInicial estadoIncial) {
-        throw new UnsupportedOperationException();
+    public void criarMesa(EstadoInicial estadoInicial) {
+        regra = new Regra(estadoInicial);
+        atorJogador.criarMesa(estadoInicial);
+        adicionarObservadores(regra, atorJogador);
+        if(estadoInicial.jogadorInicial==getPosicao())
+            atorJogador.habilitarInterface();
     }
 
     /**
@@ -30,7 +34,14 @@ public class Paciencia {
      * @return 
      */
     public void iniciarNovaPartida(Integer posicao) {
-        throw new UnsupportedOperationException();
+        Dealer dealer = new Dealer();
+        atorJogador.desabilitarInterface();
+        setPosicao(posicao);
+        if(posicao.equals(1)){
+            EstadoInicial estadoInicial = dealer.estadoInicial();
+            sincronizarMesa(estadoInicial);
+            criarMesa(estadoInicial);
+        }
     }
 
     /**
@@ -163,7 +174,7 @@ public class Paciencia {
      * @return 
      */
     public void setPosicao(int posicao) {
-        throw new UnsupportedOperationException();
+        this.posicao = posicao;
     }
 
     /**
@@ -183,7 +194,14 @@ public class Paciencia {
      * @return 
      */
     public boolean procederJogada(int origem, int destino) {
-        throw new UnsupportedOperationException();
+        try{
+            Jogada jogada= regra.jogada(origem,destino);
+            enviarJogada(jogada);
+            return true;
+        }catch(Exception e){
+            atorJogador.popupMensagem(e.getMessage());
+            return false;
+        }
     }
 
     /**

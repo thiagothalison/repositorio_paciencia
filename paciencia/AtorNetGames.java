@@ -5,6 +5,8 @@ import br.ufsc.inf.leobr.cliente.OuvidorProxy;
 import br.ufsc.inf.leobr.cliente.Proxy;
 import br.ufsc.inf.leobr.cliente.exception.ArquivoMultiplayerException;
 import br.ufsc.inf.leobr.cliente.exception.JahConectadoException;
+import br.ufsc.inf.leobr.cliente.exception.NaoConectadoException;
+import br.ufsc.inf.leobr.cliente.exception.NaoJogandoException;
 import br.ufsc.inf.leobr.cliente.exception.NaoPossivelConectarException;
 
 public class AtorNetGames implements OuvidorProxy {
@@ -24,8 +26,8 @@ public class AtorNetGames implements OuvidorProxy {
      * 
      * @return 
      */
-    public void desconectar() {
-        throw new UnsupportedOperationException();
+    public void desconectar() throws NaoConectadoException {
+        proxy.desconectar();
     }
 
     /**
@@ -33,8 +35,8 @@ public class AtorNetGames implements OuvidorProxy {
      * @param jogada
      * @return 
      */
-    public void enviarJogada(Jogada jogada) {
-        throw new UnsupportedOperationException();
+    public void enviarJogada(Jogada jogada) throws NaoJogandoException {
+        proxy.enviaJogada(jogada);
     }
 
     /**

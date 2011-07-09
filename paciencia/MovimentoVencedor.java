@@ -18,7 +18,17 @@ public class MovimentoVencedor extends Movimento implements Jogada {
      */
     public MovimentoVencedor(int origem, int destino, String vencedor) {
         super(origem, destino);
-        throw new UnsupportedOperationException();
+        this.vencedor = vencedor;
     }
+
+    public String getVencedor() {
+        return vencedor;
+    }
+
+    public void setVencedor(String vencedor) {
+        this.vencedor = vencedor;
+    }
+    
+    
 
 }
